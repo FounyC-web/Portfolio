@@ -1,89 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mon Portfolio</title>
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 <body>
     <!-- Barre de navigation -->
-     <nav>
-        <div>
-            <img src="images/logo.jpg" width="150" alt="logo">
-            <h1>Mon portfolio</h1>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" width="50" alt="Logo de Foundanhan Coulibaly">
+            <h1>Mon Portfolio</h1>
+            <p class="slogan">Étudiante passionnée en Développement d'Applications et E-Services</p>
         </div>
-        <ul>
-            <li>
-                <a href="#">Accueil</a>
-            </li>
-            <li>
-                <a href="#about">A propos de moi</a>
-            </li>
-            <li>
-                <a href="#services">Mes services</a>
-            </li>
-            <li>
-                <a href="#gallery">Mes expériences</a>
-                
-            </li>
-            <li>
-                <a href="#contact">Contactez-moi</a>
-            </li>
-        </ul>
-     </nav>
-
-     <!-- section hero-->
-      <section>
-        <img src="images/porthero.jpg" alt="hero">
-        <div>
-           <h1>Obtenez des sites web moderne et hyper design</h1>
-           <h2>Grâce à mes expériences en web dev</h2>
-           <a href="#contact">Obtenez un devis gratuit</a>
+        <div class="menu">
+            <a href="#hero">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#skills"> Mes compétences</a>
+            <a href="#experience">Expériences</a>
+            <a href="#contacts">Contactez-moi</a>
+             <!-- l'attribut download permet de télécharger le pdf au clik -->
+            <a href="CV foundanhan-khadija.pdf" class="btn-cv" download="cv">Télécharger mon cv</a>
         </div>
-      </section>
+    </nav>
 
-      <!-- A propos de moi -->
-       <section id="about">
-        <h2>Qui suis-je ?</h2>
-           <p>je m'appelle Foundanhan Coulibaly.</p>
-           <p>Je suis une étudiante en informatique et Sciences du Numérique spécialisée en développement d’applications et e-services (DAS).</p>
-           <p>Passionnée par la création numérique, j’aime concevoir des solutions simples et efficaces qui répondent à des besoins réels.</p>
-       </section>
+    <!-- Section Hero -->
+    <section class="hero" id="hero">
+        <img src="images/img1.jpg" alt="Photo de présentation Foundanhan Coulibaly">
+        <div class="hero-text">
+           <h2>Découvrez mon parcours de débutante !</h2>
+          <p>Je suis une étudiante enthousiaste, en train d’apprendre les bases du développement web et des e-services. Avec beaucoup de motivation et une envie d’évoluer, je commence à créer mes premiers projets numériques. Suivez mon aventure !</p>
+           <a href="#contacts" class="btn">Obtenez un devis gratuit</a>
+        </div>
+         <!-- insérer une vidéo à partir de la balise vidéo(des pétites vidéos de 1min) -->
+         <video src="videos/small.mp4" controls autoplay loop muted></video>
 
-       <!-- Mes services-->
-        <section id="about">
-            <h2>Mes services</h2>
-            <div>
-                <ul>
-                    <li>Microsoft Word</li>
-                    <li>Microsoft Excel (moyen)</li>
-                    <li>Base de données sous MS SQL (moyen)</li>
-                    <li>Langage web: HTML & CSS</li>
-                    <li>Canva (débutante)</li>
-                </ul>
-            </div>
+         <!-- insérer une vidéo youtube -->
+          <iframe width="907" height="510" src="https://www.youtube.com/embed/gPWGVSjg_NU" 
+          title="📚 Atelier Mini Shop React Partie 4 | Développement Web &amp; Mobile avec TknoDev School Officiel 🚀" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-        <!-- Mes expériences-->
-         <section id="gallery">
-            <h2>Mes services</h2>
-            <ul>
-             <h3>Multi Work et Service: 2024-2025</h3>
-                <li>Création de site web avec WordPress</li>
-                <li>Apprentissage des bases de la conception</li>
-                <li>Programmation HTML, CSS, JavaScript...</li>
-            </ul>
-         </section>
+    <!-- À propos de moi -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Bonjour, je m'appelle Foundanhan Coulibaly, une étudiante motivée et curieuse en Développement d'Applications et E-Services. 
+            Bien que je sois au début de mon parcours, ma passion pour la technologie et la gréation numérique me pouse à  apprendre rapidement. Lors de mon pré-stage chez Multi Work et Service (MWS), j'ai décourvert l'universdu développement web, 
+            notamment Wordpress, HTML, CSS et javaScript. Mon objectif est de concevoir des solutions digitales innovantes et accessibles, tout en continuant à développer mes compétences. En dehors des études, j'aime explorer des outils comme Canva pour exprimer ma créativité et je suis toujours prête à relever de
+                 nouveaux défis !
+            </p>
+    </section>
 
-         <!-- Mes contacts -->
-          <section id="contacts">
-            <h2>Mes contacts</h2>
-            <div>
-                <ul>
-                    <li>coulibalyfoundanhan27@gmail.com</li>
-                    <li>05 02 03 27 37</li>
-                </ul>
-            </div>
-          </section>
+    <!-- Mes services -->
+    <section id="skills">
+        <h2>Mes compétences</h2>
+        <ul>
+            <li>Microsoft Word : Création et mise en forme de documents</li>
+            <li>Microsoft Excel : Niveau intermédiaire (tableaux, formules de base)</li>
+            <li>Canva : Conception graphique (niveau débutant)</li>
+            <li>WordPress : Création de sites web</li>
+            <li>Conception web : Apprentissage des principes de design</li>
+            <li>Programmation : HTML, CSS, JavaScript (niveau débutant)</li>
+        </ul>
+    </section>
+
+    <!-- Mes expériences -->
+    <section id="experience">
+        <h2>Expériences</h2>
+        <p><strong>Pré-stage chez Multi Work et Service (MWS)</strong></p>
+        <ul>
+            <li>Création de sites web avec WordPress</li>
+            <li>Apprentissage des bases de la conception web</li>
+            <li>Introduction à la programmation avec HTML, CSS et JavaScript</li>
+        </ul>
+            
+    </section>
+
+    <!-- Mes contacts -->
+    <section id="contacts">
+        <h2>Mes contacts</h2>
+        <p>Vous pouvez me joindre par email ou sur mon numéro de téléphone :</p>
+        <ul>
+            <li>Email: <a href="mailto:coulibalyfoundanhan27@gmail.com">coulibalyfoundanhan27@gmail.com</a></li>
+            <li>Téléphone: 07 69 43 68 56 / 05 02 03 27 37</li>
+        </ul>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 Mon Portfolio | Réalisé avec passion</p>
+    </footer>
 </body>
 </html>
